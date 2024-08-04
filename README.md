@@ -3,7 +3,7 @@ This script simply copies the RAW camera files from a directory to a new dir cal
 
 If your camera takes pictures in another format, not ".cr3", change the extension on line 28. It's the final parameter of this line:
 ```python
-if os.path.isfile(cwd + "\\" + file) and str(file).lower().endswith("<ins>.cr3</ins>"):
+if os.path.isfile(cwd + "\\" + file) and str(file).lower().endswith(".cr3"):
 ```
 
 # Requirements:
