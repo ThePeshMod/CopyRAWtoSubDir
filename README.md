@@ -3,3 +3,13 @@ This script simply copies the RAW camera files from a directory to a new dir cal
 
 If your camera takes pictures in another format, not ".cr3", change the extension on line 28. It's the final parameter of this line:
 if os.path.isfile(cwd + "\\" + file) and str(file).lower().endswith("<ins>.cr3</ins>"):
+
+# Requirements:
+Python 3.11 or higher
+
+# Usage
+Either of 2 ways to use this script:
+1. Copy it inside the directory where you want to separate the files, and run it.
+2. Drag-and-drop the directory on top of the script. It will execute as the directory as parameter.
+
+You don't need to manually create the RAW subdirectory, it will be created if it doesn't exist.
