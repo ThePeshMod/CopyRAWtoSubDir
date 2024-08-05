@@ -11,6 +11,8 @@ https://choosealicense.com/licenses/gpl-3.0/
 import os
 import argparse
 
+RAW_EXTENSION = "cr3"
+
 
 def main(working_dir: str):
     cwd = working_dir
@@ -25,7 +27,7 @@ def main(working_dir: str):
 
     # Got through the file list and move the files (check if it's a file, not a dir) that end in .cr3 to the RAW folder
     for file in list_of_files:
-        if os.path.isfile(cwd + "\\" + file) and str(file).lower().endswith(".cr3"):
+        if os.path.isfile(cwd + "\\" + file) and str(file).lower().endswith(str("." + RAW_EXTENSION).lower()):
             os.replace(str(cwd + "\\" + file), str(raw_path + "\\" + file))
 
 
