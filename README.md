@@ -7,7 +7,7 @@ RAW_EXTENSION = "cr3"
 ```
 
 # Requirements:
-Python 3.11 or higher
+Python 3.11 or higher (That's what I've tested with. It's entirely possible this will run on much older python versions)
 
 # Usage
 Either of 2 ways to use this script:
